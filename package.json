@@ -1,6 +1,6 @@
 {
   "name": "landing-page",
-  "homepage": "./",
+  "homepage": ".",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
