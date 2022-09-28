@@ -1,0 +1,26 @@
+.features{
+    padding-top: 40px;
+    text-align: center;
+}
+.features h3{
+    color: #13c3c9;
+}
+.features .headline{
+    color:black;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.feature-card{
+    margin: 60px 0;
+}
+.feature-card svg{
+    font-size: 40px;
+    box-shadow: 0 0 5px gray;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 16px;
+}
+
