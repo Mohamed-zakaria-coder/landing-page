@@ -12,7 +12,7 @@ const ProductCard = ({product}) => {
             <p>{product.description}</p>
             <h4>Select Size</h4>
             <div className='select-parent'>
-              {console.log(product.sizes)}  
+              {console.log(product.sizes)}
             {product.sizes.map( size => <div>{size.size}</div>)}
             </div>
             <div className='item-price-parent'>
