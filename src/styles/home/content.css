@@ -54,14 +54,15 @@ padding-top: 20px;
 }
 .item-price-parent del{
     margin-right: 30px;
-    font-size: 25px;
+    font-size: 20px;
     color:#ffc107;
     font-weight: bold;
+
 }
 .item-price-parent span{
     color: #20c997;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 26px;
 }
 .item-price-parent button{
     border: none;

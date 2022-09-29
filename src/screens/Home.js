@@ -5,8 +5,27 @@ import InfoCard from '../components/home/InfoCard';
 import '../styles/home/home.css'
 import Features from '../components/home/Features';
 import HomeCarousel from '../components/home/Carousel';
+import Footer from '../components/shared/Footer';
 
 const Home = () => {
+    const products = [{
+        name: "Hair Lotion",
+        headline: "Hair Lotion For Your Hair Health",
+        img: "https://ae01.alicdn.com/kf/S96f1bc08ee80411d92e9e5669aa773b36/Neo-Hair-Lotion-Herbs-100-Natural-Treatment-Spray-Stop-Hair-Loss-Root-BEARD-SIDEBURNS-LONGER-Nutrients.jpg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quam delectus rerum atque voluptas aut tempore culpa eum soluta! Quibusdam porro aliquid sit repellendus cupiditate quas numquam aut, libero laborum.",
+        sizes: [
+            {
+            size: "M",
+            price: 80,
+            oldPrice: 110,
+        },
+            {
+            size: "L",
+            price: 120,
+            oldPrice: 150,
+        }
+    ],
+    }]
     return (
         <div className='home'>
             <Navbar />
@@ -22,11 +41,12 @@ const Home = () => {
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="white" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
             </div>
-            <ProductCard/>
+            {products.map(product => <ProductCard product = {product}/>)}
             <br /><br />
             <Features/>
-            <InfoCard/>
             <HomeCarousel/>
+            <InfoCard/>
+            <Footer/>
             
         </div>
     );
