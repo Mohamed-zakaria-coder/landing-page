@@ -7,3 +7,15 @@
     color: white;
     margin-top: 100px;
 }
+.ruby-logo{
+    width: 50px;
+    margin-right: 20px;
+}
+.ruby-parent{
+    display: flex;
+    align-items: center;
+    
+}
+.footer p{
+    font-size: 12px
+}

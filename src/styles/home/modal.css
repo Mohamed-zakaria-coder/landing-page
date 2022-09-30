@@ -1,0 +1,94 @@
+.modal-container{
+    height: 100%;
+    width: 100%;
+    background-color: #17171771;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 800;
+    
+} 
+.modal{
+    background-color: white;
+    width: 70%;
+    height: 80vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1000;
+    position: relative;
+    box-shadow: 0 0 5px gray;
+    flex-direction: column;
+    padding: 30px;
+    color: #9d9bde;
+
+} 
+.modal h4{
+    text-align: center;
+    color: #171717;
+    margin-bottom: 10px;
+}
+.close{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+    font-size: 22px; 
+    background-color: rgba(128, 128, 128, 0.123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    line-height: 0.3;
+    border-radius: 6px;
+    color: gray;
+}
+.product-img-parent{
+    height: 40%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.product-img-parent img{
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    border: none;
+}
+.modal select{
+    width: 50px;
+    margin-left: 10px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.171);
+    text-align: center;
+    border-radius: 8px;
+    appearance: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    outline: 0;
+    
+}
+hr{
+    color: rgba(128, 128, 128, 0.212);
+    margin-top: 20px;
+}
+.modal .btn-parent{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    width: calc(100% - 60px);
+} 
+.modal button{
+    width: 50%;
+    border: none;
+    color: white;
+    background-color: #13c3c9;
+    border-radius: 8px;
+    padding: 8px;
+}
+
