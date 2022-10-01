@@ -11,6 +11,7 @@
     animation-duration: 0.5s;
     background-image: linear-gradient(to left, rgba(37, 92, 253, 0.85), rgba(59, 70, 236, 0.85), rgba(87, 64, 202, 0.85), rgba(108, 60, 187, 0.85), rgba(115, 0, 189, 0.85));
     z-index: 600;
+
 }
 .up{
     display: flex;
@@ -49,6 +50,29 @@
 }
 .logo{
     display: flex;
+}
+.cart-icon{
+    margin-right: 8px;
+}
+.total-count{
+    background-color: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    left: -15px;
+    top: -5px;
+}
+.list-icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.cart-contianer{
+    position: relative;
 }
 @keyframes changeOpacity{
     from{

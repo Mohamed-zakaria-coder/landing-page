@@ -1,10 +1,41 @@
 import React, { useState } from 'react'
 import '../../styles/home/modal.css'
-export default function Modal({ChangeModalState, currentSize, img}) {
-    const [quantity, setQuantity] = useState(1)
-    function handleChange(e){
-        setQuantity(e.target.value)
+
+
+export default function Modal({ChangeModalState, currentSize, img, name, refreshCart}) {
+  const [buttonEnable, setButtonEnable] = useState(false) 
+  const [quantity, setQuantity] = useState(1)
+  function handleChange(e){
+      setQuantity(e.target.value)
+  }
+  function handleAddToCard(){
+      
+      const products = JSON.parse(localStorage.getItem('products'))
+      if(products){
+        products.push({
+          name: name,
+          img: img,
+          size: currentSize.size,
+          price: currentSize.price,
+          quantity: quantity
+        })
+        
+        localStorage.setItem("products", JSON.stringify(products))
+      }else{
+        localStorage.setItem("products", JSON.stringify([{
+          name: name,
+          img: img,
+          size: currentSize.size,
+          price: currentSize.price,
+          quantity: quantity
+        }]))
+        
+      }
+      refreshCart()
+      setButtonEnable(true)
+      ChangeModalState(false)
     }
+
   return (
     <div className='modal-container'>
     <div className='modal'>
@@ -25,11 +56,10 @@ export default function Modal({ChangeModalState, currentSize, img}) {
     <hr/>
     <div>Total Price: {currentSize.price * quantity}</div>
     <div className='btn-parent'>
-    <button>Continue</button>
+    <button onClick={handleAddToCard} disabled={buttonEnable} >Add</button>
     </div>
       <span className="close" onClick={() => ChangeModalState(false)}>×</span>
     </div>
-
     </div>
   )
 }

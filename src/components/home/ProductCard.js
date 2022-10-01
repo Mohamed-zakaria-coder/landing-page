@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../styles/home/content.css'
 import Modal from './Modal';
-const ProductCard = ({product}) => {
+const ProductCard = ({product, refreshCart}) => {
     const [currentSize, setCurrentSize] = useState(product.sizes[0])
     function handleChange(e){
         setCurrentSize(product.sizes[e.target.getAttribute('size-id')])
@@ -32,7 +32,7 @@ const ProductCard = ({product}) => {
             </div>
             <button onClick={() => ChangeModalState(true)}>Add To Cart</button>
             </div> 
-            {modalState &&  <Modal img={product.img} ChangeModalState={ChangeModalState}  currentSize={currentSize}/>}
+            {modalState &&  <Modal img={product.img} ChangeModalState={ChangeModalState}  currentSize={currentSize} name={product.name} refreshCart={refreshCart}/>}
 
 
         </div>

@@ -59,6 +59,7 @@
     object-fit: contain;
     border-radius: 10px;
     border: none;
+    max-width: 100%;
 }
 .modal select{
     width: 50px;
