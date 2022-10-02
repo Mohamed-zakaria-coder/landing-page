@@ -8,14 +8,17 @@
     margin-top: 100px;
 }
 .ruby-logo{
-    width: 50px;
-    margin-right: 20px;
+    width: 40px;
+    margin-right: 6px;
 }
 .ruby-parent{
     display: flex;
-    align-items: center;
-    
+    align-items: center;  
 }
+.ruby-parent img{
+    object-fit : contain;
+}
+
 .footer p{
     font-size: 12px
 }

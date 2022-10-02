@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import '../../styles/home/modal.css'
+import Order from './Order'
+import {motion} from 'framer-motion'
 
 
 export default function Modal({ChangeModalState, currentSize, img, name, refreshCart}) {
