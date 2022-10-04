@@ -4,7 +4,7 @@ import CartCard from '../../CartCard'
 import Order from './Order'
 import {BiRightArrowAlt} from "react-icons/bi"
 import {animate, AnimatePresence, motion} from 'framer-motion'
-export default function Cart({ChangeCartState}) {
+export default function Cart({ChangeCartState,showSuccess}) {
     const [orderVisible, setOrderVisible] = useState(false)
     function ChangeOrderVisible(){
         setOrderVisible(true)
@@ -35,7 +35,7 @@ export default function Cart({ChangeCartState}) {
         <hr />
         {products && <p className='total-price'>Total: {products.reduce((total,curr) => {
             return total + (curr.quantity * curr.price)
-        }, 0)}</p>}</div>  { orderVisible && <motion.div initial={{x: 2000}} animate={{x:0}} transition={{duration: 1, type: 'spring', delay: 1}} ><Order/></motion.div>}
+        }, 0)}</p>}</div>  { orderVisible && <motion.div initial={{x: 2000}} animate={{x:0}} transition={{duration: 1, type: 'spring', delay: 1}} ><Order ChangeCartState={ChangeCartState} showSuccess={showSuccess}/></motion.div>}
         
          <div className='order-parent'>
          {!orderVisible && <button onClick={ChangeOrderVisible}>Continue <BiRightArrowAlt size={16}/></button>}

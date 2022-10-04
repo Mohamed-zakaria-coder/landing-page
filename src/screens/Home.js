@@ -6,8 +6,16 @@ import '../styles/home/home.css'
 import Features from '../components/home/Features';
 import HomeCarousel from '../components/home/Carousel';
 import Footer from '../components/shared/Footer';
+import {GoVerified} from 'react-icons/go'
 const Home = () => {
+    const [success, setSuccess] = useState(false)
     const [productsCount, setProductsCount] = useState(0)
+    function showSuccess(){
+        setSuccess(true)
+        setTimeout(() => {
+            setSuccess(false)
+        }, 3000)
+    }
     useEffect(() => {
         setProductsCount(JSON.parse(localStorage.getItem('products'))  != null && JSON.parse(localStorage.getItem('products')).length)
 
@@ -37,7 +45,7 @@ const Home = () => {
     
     return (
         <div className='home'>
-            <Navbar productsCount={productsCount}/>
+            <Navbar productsCount={productsCount} showSuccess={showSuccess}/>
             <div className="cover-container">
                 <div className="cover-background"></div>
             <div className='cover'>
@@ -56,6 +64,12 @@ const Home = () => {
             <Features/>
             <HomeCarousel/>
             <InfoCard/>
+            {
+                success && <div className='success-message'>
+                <GoVerified style={{color: 'green'}}/>
+                <p>Successfully Ordered</p>
+                </div>
+            }
             <Footer/>
             
         </div>

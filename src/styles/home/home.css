@@ -58,6 +58,18 @@
     margin-bottom: 30px;
     font-size: 15px;
 }
+.success-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    box-shadow: 0 3px 10px lightgray;
+    top: 0;
+    left: 0;
+    background-color: red;
+
+}
 @keyframes moveToTop {
     0%{
         transform: translateY(0);

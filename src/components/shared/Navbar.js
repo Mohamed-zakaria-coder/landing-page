@@ -7,7 +7,7 @@ import Cart from '../home/Cart';
 
 import rubyImg  from '../../images/WhatsApp_Image_2022-09-29_at_1.41.36_AM-removebg-preview.png'
 
-const Navbar = ({productsCount}) => {
+const Navbar = ({productsCount , showSuccess}) => {
     
     
     
@@ -45,7 +45,7 @@ const Navbar = ({productsCount}) => {
                 </div>
                 <BsListNested />
             </div>
-            {showCart && <Cart ChangeCartState={ChangeCartState}/>}
+            {showCart && <Cart ChangeCartState={ChangeCartState} showSuccess={showSuccess}/>}
         </div>
     );
 }
