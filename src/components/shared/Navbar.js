@@ -5,7 +5,7 @@ import "../../styles/navbar.css";
 import {useState, useEffect} from 'react';
 import Cart from '../home/Cart';
 
-import rubyImg from '../../images/WhatsApp_Image_2022-09-29_at_1.41.36_AM-removebg-preview.png'
+import rubyImg from '../../images/RubyCosmo.png'
 
 const Navbar = ({productsCount, showSuccess}) => {
 

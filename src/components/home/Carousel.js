@@ -22,7 +22,7 @@ export default function HomeCarousel() {
       //     },
       //   },
       // ]}
-      // dots={true}
+       dots={true}
       // showSides={true}
       // sidesOpacity={.5}
       // sideSize={.1}

@@ -24,7 +24,8 @@ export default function Cart({ChangeCartState,showSuccess}) {
             <CartCard product={product}/>
             </motion.div>
             )
-        })
+        }) &&
+        <hr />
         
         )
         || <div className='empty'>
@@ -32,13 +33,13 @@ export default function Cart({ChangeCartState,showSuccess}) {
         </div>
         }
         <br />
-        <hr />
+        
         {products && <p className='total-price'>Total: {products.reduce((total,curr) => {
             return total + (curr.quantity * curr.price)
         }, 0)}</p>}</div>  { orderVisible && <motion.div initial={{x: 2000}} animate={{x:0}} transition={{duration: 1, type: 'spring', delay: 1}} ><Order ChangeCartState={ChangeCartState} showSuccess={showSuccess}/></motion.div>}
         
          <div className='order-parent'>
-         {!orderVisible && <button onClick={ChangeOrderVisible}>Continue <BiRightArrowAlt size={16}/></button>}
+         {!orderVisible && products && <button onClick={ChangeOrderVisible}>Continue <BiRightArrowAlt size={16}/></button>}
          </div>
     <span className="cart-close" onClick={() => ChangeCartState(false)}>×</span>
     </div>
