@@ -2,9 +2,7 @@
     padding-top: 40px;
     text-align: center;
 }
-.features h3{
-    color: #13c3c9;
-}
+
 .features .headline{
     color:black;
     font-weight: bold;
@@ -17,10 +15,20 @@
 }
 .feature-card svg{
     font-size: 40px;
-    box-shadow: 0 0 5px gray;
+    box-shadow: 0 3px 10px gray;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     padding: 16px;
 }
-
+@media only screen and (min-width: 738px){
+    .feature-cards-parent{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+       
+    }
+    .feature-card{
+        width: 200px;
+    }
+}

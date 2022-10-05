@@ -3,7 +3,7 @@ import '../../styles/home/cart.css'
 import CartCard from '../../CartCard'
 import Order from './Order'
 import {BiRightArrowAlt} from "react-icons/bi"
-import {animate, AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 export default function Cart({ChangeCartState,showSuccess}) {
     const [orderVisible, setOrderVisible] = useState(false)
     function ChangeOrderVisible(){

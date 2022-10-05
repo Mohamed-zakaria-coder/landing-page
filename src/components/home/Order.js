@@ -14,9 +14,8 @@ function Order({ChangeCartState , showSuccess}){
     }
     async function  handleSubmit(e){
         e.preventDefault()
-        console.log(orderDetails)
         await addDoc(orderCollection, orderDetails)
-        localStorage.setItem('products', JSON.stringify([]))
+        localStorage.setItem('products', JSON.stringify(null))
         ChangeCartState(false) 
         showSuccess()
     }

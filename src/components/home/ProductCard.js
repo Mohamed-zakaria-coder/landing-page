@@ -16,12 +16,12 @@ const ProductCard = ({product, refreshCart}) => {
             <div className='content-img-parent'>
                 <img src={product.img} alt={product.name}/>
             </div>
+            <div>
             <h3>{product.name}</h3>
             <p className='product-headline'>{product.headline}</p>
             <p>{product.description}</p>
             <h4>Select Size</h4>
             <div className='select-parent'>
-              {console.log(product.sizes)}
             {product.sizes.map( (size, index) => <div onClick={(e) => handleChange(e)} size-id={index}>{size.size}</div>)}
             </div>
             <div className='item-price-parent'>
@@ -33,7 +33,7 @@ const ProductCard = ({product, refreshCart}) => {
             <button onClick={() => ChangeModalState(true)}>Add To Cart</button>
             </div> 
             {modalState &&  <Modal img={product.img} ChangeModalState={ChangeModalState}  currentSize={currentSize} name={product.name} refreshCart={refreshCart}/>}
-
+            </div>
 
         </div>
     );

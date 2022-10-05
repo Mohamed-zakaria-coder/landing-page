@@ -4,6 +4,7 @@ import CarouselCard from './CarouselCard';
 
 export default function HomeCarousel() {
   return (
+    <div className='ininiteCarousel-parent'>
     <InfiniteCarousel   
     // breakpoints={[
       //   {
@@ -33,5 +34,6 @@ export default function HomeCarousel() {
         <CarouselCard/>
         <CarouselCard/>
     </InfiniteCarousel>
+    </div>
   )
 }

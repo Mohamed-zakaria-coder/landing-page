@@ -72,3 +72,29 @@ padding-top: 20px;
     color: white;
     cursor: pointer;
 }
+
+@media only screen and (min-width: 738px){
+    .content{
+        margin: auto;   
+        max-width: 500px;
+    }
+    .info-card{
+        padding-top: 80px;
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        max-width: 600px;
+    }
+    .info-card .content-img-parent{
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+    .info{
+        flex-grow: 1;
+        flex-basis: 50%;
+        
+    }
+
+    
+    
+}
