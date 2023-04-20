@@ -9,7 +9,7 @@ export default function CartCard({product}) {
       </div>
       <div className="card-info">
         <h4>{product.name}</h4>
-        <p>{product.size}</p>
+        <p>Size: ( {product.size} )</p>
         <p>{product.price} × {product.quantity} = {product.price * product.quantity}</p>
       </div>
     </div>

@@ -26,8 +26,7 @@ export default function Cart({ChangeCartState,showSuccess}) {
             <CartCard product={product}/>
             </motion.div>
             )
-        }) &&
-        <hr />
+        })
         
         )
         || <div className='empty'>
@@ -35,7 +34,7 @@ export default function Cart({ChangeCartState,showSuccess}) {
         </div>
         }
         <br />
-        {products && <div>{products.map(product => {
+        {/* {products && <div>{products.map(product => {
            return( <div className='products-parent-cart'>
             <div>
                 <img src={product.img} className='cart-img'/>
@@ -51,7 +50,7 @@ export default function Cart({ChangeCartState,showSuccess}) {
                 </div>
             </div>
            )
-        })}</div>}
+        })}</div>} */}
         {products && <p className='total-price'>Total: {products.reduce((total,curr) => {
             return total + (curr.quantity * curr.price)
         }, 0)}</p>}</div>  { orderVisible && <motion.div initial={{x: 2000}} animate={{x:0}} transition={{duration: 1, type: 'spring', delay: 1}} ><Order ChangeCartState={ChangeCartState} showSuccess={showSuccess}/></motion.div>}
