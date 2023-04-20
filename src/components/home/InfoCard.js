@@ -1,13 +1,12 @@
 import React from 'react';
 import "../../styles/home/content.css"
-
+import lotionImg from "../../images/hair-lotion.png"
 const InfoCard = () => {
   return (
     <div className='content info-card'>
       <div className='content-img-parent'>
         <img
-          src="https://ae01.alicdn.com/kf/S96f1bc08ee80411d92e9e5669aa773b36/Neo-Hair-Lotion-Herbs-100-Natural-Treatment-Spray-Stop-Hair-Loss-Root-BEARD-SIDEBURNS-LONGER-Nutrients.jpg"
-          alt=""/>
+          src= {lotionImg}/>
       </div>
       <div className ="info">
         <h3>Why us..?!</h3>

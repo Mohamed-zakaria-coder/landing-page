@@ -38,7 +38,7 @@ export default function Cart({ChangeCartState,showSuccess}) {
         {products && <div>{products.map(product => {
            return( <div className='products-parent-cart'>
             <div>
-                <img src={product.img} alt="hair-lotion" className='cart-img'/>
+                <img src={product.img} className='cart-img'/>
                 <div>{product.name}</div>
             </div>
             <div>

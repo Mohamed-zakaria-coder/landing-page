@@ -30,9 +30,7 @@ const Home = () => {
     {
       name: "Hair Lotion",
       headline: "Hair Lotion For Your Hair Health",
-      img: "https://ae01.alicdn.com/kf/S96f1bc08ee80411d92e9e5669aa773b36/Neo-Hair-Lotion-He" +
-        "rbs-100-Natural-Treatment-Spray-Stop-Hair-Loss-Root-BEARD-SIDEBURNS-LONGER-Nutri" +
-        "ents.jpg",
+      img: require ("../images/hair-lotion.png"),
       description: "The combination of our constituents is refreshing and natural. Rich, rich vitami" +
         "ns, moisturizers, and protective substances hydrates and strengthens hair when a" +
         "pplying. Hair feels fresh, shiney and soft after applying. The best solution for" +
