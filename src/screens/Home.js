@@ -59,7 +59,7 @@ const Home = () => {
         <div className='cover'>
           <div className='prod-description'>
             <h1>Best Natural Based Products For Your Daily Routine.</h1>
-            <p>Get the perfect combination of hair products for, get the best results
+            <p>Get the best combination of hair products for, get the best results
               instantly and make your hair shine.
             </p>
           </div>

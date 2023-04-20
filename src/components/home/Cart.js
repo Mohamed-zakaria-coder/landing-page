@@ -11,8 +11,10 @@ export default function Cart({ChangeCartState,showSuccess}) {
         document.getElementById('card-animation').classList.add('animate-to-left')
     }
     const [products, setProducts] = useState()
+    
     useEffect(() => {
         setProducts(JSON.parse(localStorage.getItem("products")))
+        
     }, [])
   return (
     <div className='cart-container'>
@@ -33,14 +35,31 @@ export default function Cart({ChangeCartState,showSuccess}) {
         </div>
         }
         <br />
-        
+        {products && <div>{products.map(product => {
+           return( <div className='products-parent-cart'>
+            <div>
+                <img src={product.img} alt="hair-lotion" className='cart-img'/>
+                <div>{product.name}</div>
+            </div>
+            <div>
+                <h3>Quantity</h3>
+                <div>{product.quantity}</div>
+                </div>
+                <div>
+                  <h3>Price</h3>  
+                <div>{product.price}</div>
+                </div>
+            </div>
+           )
+        })}</div>}
         {products && <p className='total-price'>Total: {products.reduce((total,curr) => {
             return total + (curr.quantity * curr.price)
         }, 0)}</p>}</div>  { orderVisible && <motion.div initial={{x: 2000}} animate={{x:0}} transition={{duration: 1, type: 'spring', delay: 1}} ><Order ChangeCartState={ChangeCartState} showSuccess={showSuccess}/></motion.div>}
         
-         <div className='order-parent'>
+         
+        
          {!orderVisible && products && <button onClick={ChangeOrderVisible}>Continue <BiRightArrowAlt size={16}/></button>}
-         </div>
+         
     <span className="cart-close" onClick={() => ChangeCartState(false)}>×</span>
     </div>
     </div>

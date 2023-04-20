@@ -1,15 +1,12 @@
 import React, { useState } from 'react'
 import '../../styles/home/modal.css'
-import Order from './Order'
-import {motion} from 'framer-motion'
-
 
 export default function Modal({ChangeModalState, currentSize, img, name, refreshCart}) {
   const [buttonEnable, setButtonEnable] = useState(false) 
   const [quantity, setQuantity] = useState(1)
   function handleChange(e){
       setQuantity(e.target.value)
-  }
+  } 
   function handleAddToCard(){
       
       const products = JSON.parse(localStorage.getItem('products'))
