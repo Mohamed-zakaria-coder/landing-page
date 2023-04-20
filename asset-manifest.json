@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "./static/css/main.022fb783.css",
-    "main.js": "./static/js/main.88378188.js",
+    "main.js": "./static/js/main.ee04c998.js",
+    "static/media/hair-lotion.png": "./static/media/hair-lotion.5e6a9048af999a66c844.png",
     "static/media/RubyCosmo.png": "./static/media/RubyCosmo.3061de7cb350d1e8395d.png",
     "index.html": "./index.html",
     "main.022fb783.css.map": "./static/css/main.022fb783.css.map",
-    "main.88378188.js.map": "./static/js/main.88378188.js.map"
+    "main.ee04c998.js.map": "./static/js/main.ee04c998.js.map"
   },
   "entrypoints": [
     "static/css/main.022fb783.css",
-    "static/js/main.88378188.js"
+    "static/js/main.ee04c998.js"
   ]
 }
