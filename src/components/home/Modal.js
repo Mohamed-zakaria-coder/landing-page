@@ -16,7 +16,8 @@ export default function Modal({ChangeModalState, currentSize, img, name, refresh
           img: img,
           size: currentSize.size,
           price: currentSize.price,
-          quantity: quantity
+          quantity: quantity,
+          id: Date.now()
         })
         
         localStorage.setItem("products", JSON.stringify(products))
@@ -26,7 +27,8 @@ export default function Modal({ChangeModalState, currentSize, img, name, refresh
           img: img,
           size: currentSize.size,
           price: currentSize.price,
-          quantity: quantity
+          quantity: quantity,
+          id: Date.now()
         }]))
         
       }

@@ -58,6 +58,7 @@
 
 .cart-icon{
     margin-right: 8px;
+    cursor: pointer;
 }
 .total-count{
     background-color: red;
@@ -66,10 +67,13 @@
     height: 30px;
     position: absolute;
     font-size: 15px;
-    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     left: -15px;
     top: -5px;
+    padding-right: 2px;
 }
 .logo p{
     font-size: 22px;

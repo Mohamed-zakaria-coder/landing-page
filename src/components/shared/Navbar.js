@@ -7,7 +7,7 @@ import Cart from '../home/Cart';
 
 import rubyImg from '../../images/RubyCosmo.png'
 
-const Navbar = ({productsCount, showSuccess}) => {
+const Navbar = ({productsCount, showSuccess, setUpVal, upVal}) => {
 
   const [showCart,
     setShowCart] = useState(false)
@@ -50,7 +50,7 @@ const Navbar = ({productsCount, showSuccess}) => {
         </div>
         <BsListNested/>
       </div>
-      {showCart && <Cart ChangeCartState={ChangeCartState} showSuccess={showSuccess}/>}
+      {showCart && <Cart upVal={upVal} setUpVal={setUpVal} ChangeCartState={ChangeCartState} showSuccess={showSuccess}/>}
     </div>
   );
 }

@@ -18,10 +18,11 @@ const Home = () => {
       setSuccess(false)
     }, 3000)
   }
+  const [upVal, setUpVal] = useState()
   useEffect(() => {
     setProductsCount(JSON.parse(localStorage.getItem('products')) != null && JSON.parse(localStorage.getItem('products')).length)
 
-  }, [])
+  }, [upVal])
   function refreshCart() {
     setProductsCount(JSON.parse(localStorage.getItem('products')) != null && JSON.parse(localStorage.getItem('products')).length)
 
@@ -51,7 +52,7 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <Navbar productsCount={productsCount} showSuccess={showSuccess}/>
+      <Navbar productsCount={productsCount} showSuccess={showSuccess} setUpVal={setUpVal} upVal={upVal}/>
       <div className="cover-container">
         <div className="cover-background"></div>
         <div className='cover'>
