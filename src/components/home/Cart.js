@@ -40,6 +40,11 @@ export default function Cart({
               );
             })}
           <br />
+          {
+            products && products[0] === undefined && <div className="empty">
+            <p>The Cart Is Empty</p>
+          </div>
+          }
           {/* {products && <div>{products.map(product => {
            return( <div className='products-parent-cart'>
             <div>
@@ -60,17 +65,13 @@ export default function Cart({
           {products &&
             (products.reduce((total, curr) => {
               return total + curr.quantity * curr.price;
-            }, 0) > 0 ? (
+            }, 0) > 0 && (
               <p className="total-price">
                 Total:{" "}
                 {products.reduce((total, curr) => {
                   return total + curr.quantity * curr.price;
                 }, 0)}
               </p>
-            ) : (
-              <div className="empty">
-                <p>The Cart Is Empty</p>
-              </div>
             ))}
         </div>{" "}
         {orderVisible && (
