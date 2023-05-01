@@ -40,10 +40,13 @@ export default function Cart({
               );
             })}
           <br />
+          {!products || products[0] === undefined ?(
+            <div className="empty">
+              <p>The Cart Is Empty</p>
+            </div>
+          ) : ""}
           {
-            products && products[0] === undefined && <div className="empty">
-            <p>The Cart Is Empty</p>
-          </div>
+            
           }
           {/* {products && <div>{products.map(product => {
            return( <div className='products-parent-cart'>
@@ -63,7 +66,7 @@ export default function Cart({
            )
         })}</div>} */}
           {products &&
-            (products.reduce((total, curr) => {
+            products.reduce((total, curr) => {
               return total + curr.quantity * curr.price;
             }, 0) > 0 && (
               <p className="total-price">
@@ -72,7 +75,7 @@ export default function Cart({
                   return total + curr.quantity * curr.price;
                 }, 0)}
               </p>
-            ))}
+            )}
         </div>{" "}
         {orderVisible && (
           <motion.div
@@ -86,14 +89,15 @@ export default function Cart({
             />
           </motion.div>
         )}
-        {!orderVisible && products && products.reduce((total, curr) => {
-              return total + curr.quantity * curr.price;
-            }, 0) > 0 && (
-              
-          <button onClick={ChangeOrderVisible}>
-            Continue <BiRightArrowAlt size={16} />
-          </button>
-        )}
+        {!orderVisible &&
+          products &&
+          products.reduce((total, curr) => {
+            return total + curr.quantity * curr.price;
+          }, 0) > 0 && (
+            <button onClick={ChangeOrderVisible}>
+              Continue <BiRightArrowAlt size={16} />
+            </button>
+          )}
         <span className="cart-close" onClick={() => ChangeCartState(false)}>
           ×
         </span>
