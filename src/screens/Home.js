@@ -64,8 +64,8 @@ const Home = () => {
           </div>
           <div className='cover-img'>
             <img
-              src="https://cdn.shopify.com/s/files/1/0599/2441/4645/products/lotion-bottle-front-spray-right_800x.png?v=1662465511"
-              alt=""/>
+              src= "https://cdn.pixabay.com/photo/2016/11/26/12/52/bottle-1860617__340.png"
+              alt="cover-img"/>
 
           </div>
         </div>
