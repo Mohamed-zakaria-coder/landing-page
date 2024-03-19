@@ -69,7 +69,7 @@ const Home = () => {
 
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style={{marginBottom: "-1px"}}>
           <path
             fill="white"
             fill-opacity="1"
