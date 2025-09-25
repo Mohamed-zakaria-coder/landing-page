@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/shared/Navbar";
 import ProductCard from "../components/home/ProductCard";
-import InfoCard from "../components/home/InfoCard";
+import InfoCard from "../components/home/Whyus";
 import "../styles/home/home.css";
 import Features from "../components/home/Features";
 import HomeCarousel from "../components/home/Carousel";
 import FAQ from "../components/home/FAQ";
 import Footer from "../components/shared/Footer";
 import { GoVerified } from "react-icons/go";
+import Hero from "../components/home/Hero";
 const Home = () => {
   const [success, setSuccess] = useState(false);
   const [productsCount, setProductsCount] = useState();
@@ -111,6 +112,7 @@ const Home = () => {
           <p>Successfully Ordered</p>
         </div>
       )}
+      <Hero/>
       <FAQ />
       <Footer />
     </div>
