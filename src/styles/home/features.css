@@ -12,6 +12,12 @@
 }
 .feature-card{
     margin: 60px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
 }
 .feature-card svg{
     font-size: 40px;

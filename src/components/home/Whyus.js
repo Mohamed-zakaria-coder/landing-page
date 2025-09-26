@@ -1,24 +1,27 @@
 import React from "react";
-import "../../styles/home/content.css";
+import "../../styles/home/whyus.css";
 import lotionImg from "../../images/hair-lotion.png";
-const InfoCard = () => {
+import { FaLeaf, FaUserMd, FaThumbsUp } from "react-icons/fa";
+
+const Whyus = () => {
   return (
-    <div className="content info-card">
-      <div className="content-img-parent">
-        <img src={lotionImg} />
+    <section className="whyus">
+      <div className="whyus-img">
+        <img src={lotionImg} alt="Hair Lotion" />
       </div>
-      <div className="info">
-        <h3>Why us..?!</h3>
-        <p>
-          Because of the hard-working we put into our products make them the
-          best choice for you. Besides the natural constituents we use in our
-          products that will never harm you, the medical knowledge enables us to
-          know what fits you, you like, and helps you take care of your
-          lifestyle.
+      <div className="whyus-info">
+        <h3>Why Choose Us?</h3>
+        <p className="whyus-subtitle">
+          We combine nature and science to create products that truly care for you.
         </p>
+        <ul>
+          <li><FaLeaf /> 100% Natural Ingredients</li>
+          <li><FaUserMd /> Backed by Medical Knowledge</li>
+          <li><FaThumbsUp /> Trusted & Safe for Daily Use</li>
+        </ul>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default InfoCard;
+export default Whyus;
