@@ -82,9 +82,9 @@
         text-align: left;
         padding-left: 40px;
     }
-    .cover-img img{
+    /* .cover-img img{
         
-    }
+    } */
     .cover h1{
         font-size: 40px;
         line-height: 1.5;
@@ -95,9 +95,9 @@
         padding: 20px;
         margin: 0;
     }
-    .prod-description{
+    /* .prod-description{
         
-    }
+    } */
 
 }
 

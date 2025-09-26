@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../components/shared/Navbar";
 import ProductCard from "../components/home/ProductCard";
 import Whyus from "../components/home/Whyus";

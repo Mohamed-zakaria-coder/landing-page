@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../../styles/home/order.css'
 import { db } from './firebase-config'
-import {collection , getDocs, addDoc} from 'firebase/firestore'
+import {collection , addDoc} from 'firebase/firestore'
 
 function Order({ChangeCartState , showSuccess}){
     const [orderDetails, setOrderDetails] = useState()

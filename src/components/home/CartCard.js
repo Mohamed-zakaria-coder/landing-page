@@ -4,6 +4,7 @@ export default function CartCard({product, setUpVal}) {
   
   function deleteItem(e){   
     setUpVal(product)
+    // eslint-disable-next-line no-mixed-operators
     let products = JSON.parse(localStorage.getItem("products")) && JSON.parse(localStorage.getItem("products")) || []
     products = products.filter(prod => Number(prod.id) !== Number(e.target.id))
     localStorage.setItem("products", JSON.stringify(products))
