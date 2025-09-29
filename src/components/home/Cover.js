@@ -1,6 +1,6 @@
 export default function Cover() {
   return (
-    <div className="cover-container">
+    <div className="cover-container" id="home">
       <div className="cover-background"></div>
       <div className="cover">
         <div className="prod-description">

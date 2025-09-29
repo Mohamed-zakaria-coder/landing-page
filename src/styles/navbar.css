@@ -75,6 +75,56 @@
     top: -5px;
     padding-right: 2px;
 }
+.navbar-list {
+  position: relative;
+}
+
+.sections-list {
+  position: absolute;
+  top: 80px;           /* place below the icon */
+  right: 0;            /* align to the right edge */
+  /* background-color: white; */
+  /* padding: 20px; */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 10000;
+  min-width: 190px;
+}
+
+.sections-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sections-list li {
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.sections-list li:hover {
+      background-image: linear-gradient(
+    to left,
+    rgba(37, 92, 253, 0.6),
+    rgba(59, 70, 236, 0.6),
+    rgba(87, 64, 202, 0.6),
+    rgba(108, 60, 187, 0.6),
+    rgba(115, 0, 189, 0.6))
+}
+.sections-list li a{
+    text-decoration: none;
+    width: 100%;
+      display: block;
+
+    
+}
+.list-icon{
+    cursor: pointer;
+}
+
 .logo p{
     font-size: 22px;
 }

@@ -5,7 +5,7 @@ import { FaLeaf, FaUserMd, FaThumbsUp } from "react-icons/fa";
 
 const Whyus = () => {
   return (
-    <section className="whyus">
+    <section className="whyus" id="whyus">
       <div className="whyus-img">
         <img src={lotionImg} alt="Hair Lotion" />
       </div>

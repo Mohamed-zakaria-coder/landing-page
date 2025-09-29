@@ -6,7 +6,7 @@ import {BsClockHistory} from 'react-icons/bs';
 import '../../styles/home/features.css'
 const Features = () => {
   return (
-    <div className='features'>
+    <div className='features' id='features'>
       <div>
         <h3>Explore Amazing Features</h3>
         <p className='headline'>RubyCosmo Products Have Lots Of Excellent Features</p>
