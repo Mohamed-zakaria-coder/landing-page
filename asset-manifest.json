@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.3a11f553.css",
-    "main.js": "./static/js/main.09d9e467.js",
+    "main.css": "./static/css/main.042dc8f6.css",
+    "main.js": "./static/js/main.c465b55d.js",
     "static/media/hair-lotion.png": "./static/media/hair-lotion.5e6a9048af999a66c844.png",
     "static/media/RubyCosmo.png": "./static/media/RubyCosmo.8a029f822c030585f20c.png",
     "index.html": "./index.html"
   },
   "entrypoints": [
-    "static/css/main.3a11f553.css",
-    "static/js/main.09d9e467.js"
+    "static/css/main.042dc8f6.css",
+    "static/js/main.c465b55d.js"
   ]
 }
