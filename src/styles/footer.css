@@ -6,6 +6,16 @@
     padding: 20px;
     color: white;
     margin-top: 100px;
+    background-image: linear-gradient(
+    to left,
+    rgba(37, 92, 253, 0.6),
+    rgba(59, 70, 236, 0.6),
+    rgba(87, 64, 202, 0.6),
+    rgba(108, 60, 187, 0.6),
+    rgba(115, 0, 189, 0.6)
+);
+
+    
 }
 .ruby-logo{
     width: 40px;
