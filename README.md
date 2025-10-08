@@ -25,4 +25,19 @@ Originally bootstrapped with **Create React App**, this project has evolved with
 
 ---
 
+## ⚙️ **Installation**
+
+# 1️⃣ Clone this repository
+git clone https://github.com/mohamed-zakaria-coder/landing-page.git
+
+# 2️⃣ Move into the project directory
+cd landing-page
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Start the development server
+npm run dev
+
+
 
